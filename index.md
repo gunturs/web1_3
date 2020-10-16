@@ -54,7 +54,36 @@ else
 {
    $yudisium="E";
 }
+echo "Nilai Yudisium= $yudisium";
 ?>
+```
+> **keterangan:** pada contoh program diatas terdapat 5 kondisi nilai sehingga if yang dipakai sebanyak 4
+
+## Swicth
+
+Perhatikan contoh berikut
+```php
+<?php
+$nilai = 80;
+
+switch ($nilai) {
+  case $nilai>=80:
+    $yudisium="A";
+    break;
+  case $nilai>=70:
+    $yudisium="B";
+    break;
+  case $nilai>=60:
+    $yudisium="C";
+    break;
+  case $nilai>=50:
+    $yudisium="D";
+    break;
+default:
+    $yudisium="E";
+}
+echo "Nilai Yusidium=". $yudisium;
+?> 
 ```
 
 
