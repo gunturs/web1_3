@@ -85,6 +85,35 @@ default:
 echo "Nilai Yusidium=". $yudisium;
 ?> 
 ```
+> #Contoh lain
 
+```php
+<form action="?" method="post">
+ <input type="text" name="tnilai">
+ <input type="submit" value="Proses">
+ </form>
+ <?php
+$nilai = $_POST['tnilai'];
+else
+{ $nilai=0;}
+switch ($nilai) {
+  case $nilai>=80:
+    $yudisium="A";
+    break;
+  case $nilai>=70:
+    $yudisium="B";
+    break;
+  case $nilai>=60:
+    $yudisium="C";
+    break;
+  case $nilai>=50:
+    $yudisium="D";
+    break;
+default:
+    $yudisium="E";
+}
+echo "Nilai Yusidium=". $yudisium;
+?> 
+```
 
 
